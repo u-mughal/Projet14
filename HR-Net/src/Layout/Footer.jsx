@@ -1,9 +1,11 @@
+import './Footer.css'
+
 const Footer = () => {
-  return (
-      <div>
-          Footer
-      </div>
-  );
+    return (
+        <footer>
+            <p>HR net | outil de gestion de dossiers des employés Wealth Health</p>
+        </footer>
+    );
 };
 
 export default Footer;

@@ -1,19 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter , Routes , Route } from "react-router-dom";
+import PublicRouter from '@/Pages/PublicRouter';
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import routes from '~react-pages'
-import Header from './Layout/Header'
-import Footer from './Layout/Footer'
 
 
-const router = createBrowserRouter(routes)
-console.log(routes);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
-    <RouterProvider router={router}/>
-    <Footer />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<PublicRouter />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )

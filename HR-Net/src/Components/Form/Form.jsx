@@ -4,6 +4,11 @@ import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import { states } from '@/Data/States'
 import { departements } from '@/Data/Departements'
+import { Modal } from 'usman-modal';
+
+import { useForm } from 'react-hook-form';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import './Form.css'
 
 const STATES = [...new Set(states.map((state) => { return { value: state.abbreviation, label: state.name } }))];
@@ -16,9 +21,21 @@ const Form = () => {
     const [birthdate, onChangeBirthdate] = useState(undefined);
     const [startDate, setStartDate] = useState(new Date());
 
+    const [modalIsActive, setModalIsActive] = useState(false);
+
+    const closeModal = () => {
+        setModalIsActive(false);
+    };
+
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+        setModalIsActive(true)
+      }
+
     return (
         <>
-        <form className='createEmployee'>
+        <form className='createEmployee' onSubmit={handleSubmit} >
             
             <div className='form__field'>
                 <label htmlFor='firstName'>First Name</label>
@@ -77,7 +94,7 @@ const Form = () => {
 
                 <div className='form__field'>
                     <label htmlFor='state'>State</label>
-                    <Select className='select' options={STATES} />
+                    <Select className='select' options={STATES} required />
                 </div>
 
                 <div className='form__field'>
@@ -88,12 +105,17 @@ const Form = () => {
 
             <div className='form__field'>
                 <label htmlFor='departement'>Departement</label>
-                <Select className='select' options={DEPARTEMENTS} />
+                <Select className='select' options={DEPARTEMENTS} required />
             </div>
 
-            <button className='button' type="submit">Save</button>
+            <button className="openModalBtn" type="submit" >
+                Save
+            </button>
         </form>
-        <p>ajouter la modal lorsque un employé a été ajouté</p>
+        
+        {modalIsActive && (
+          <Modal title="Employee created" text="Well done! You've successfully created your employee" closeModal={closeModal} />
+        )}
         </>
     );
 };

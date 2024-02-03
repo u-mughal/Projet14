@@ -1,13 +1,3 @@
-import Form from "../Components/Form/Form";
-
-const Home = () => {
-
-    return (
-        <>
-        <h2>Create Employee</h2>
-        <Form />
-        </>
-    );
-};
-
-export default Home;
+export { default as Home } from './Home'
+export { default as List } from './List'
+export { default as Not404 } from './Error'

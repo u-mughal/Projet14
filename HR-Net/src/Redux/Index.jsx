@@ -16,5 +16,6 @@ export const mainStore = configureStore({
     reducer: {
         employees: employeesSlice.reducer
     },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
     devTools: true,
 })

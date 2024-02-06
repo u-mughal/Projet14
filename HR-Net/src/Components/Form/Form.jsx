@@ -57,13 +57,15 @@ const Form = () => {
 
 
     const onSubmit = (data) => {
-        console.log(data);
-        data.state = selectedState;
-        data.department = selectedDepartment;
+        // Convert the startdate to a serializable format (ISO string)
+        const dataToSend = { ...data, startdate: data.startdate.toISOString(), birthdate: data.birthdate.toISOString() };
+        dataToSend.state = selectedState;
+        dataToSend.department = selectedDepartment;
         setModalIsActive(true);
         reset({ firstname: "", lastname: "", birthdate: "", startdate: "", department: "Sales", street: "", city: "", state: "Alabama", zipcode: "" });
-        dispatch({ type: 'employees/addEmployee', payload: data });
+        dispatch({ type: 'employees/addEmployee', payload: dataToSend });
     }
+    
 
     return (
         <>

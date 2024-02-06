@@ -8,7 +8,6 @@ const Table = () => {
 
   const reduxEmployees = useSelector((state) => state.employees);
   const employees = [...mockEmployees, ...reduxEmployees];
-  console.log(employees);
 
   const [searchTerm, setSearchTerm] = useState('');
 

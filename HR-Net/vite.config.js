@@ -18,5 +18,9 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src')
       }
     ]
-  }
+  },
+  build: {
+    chunkSizeWarningLimit: 1600, // Ajustez cette valeur selon vos besoins
+  },
 })
+

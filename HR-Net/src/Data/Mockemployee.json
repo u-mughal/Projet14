@@ -4,10 +4,16 @@
     "lastname": "Doe",
     "birthdate": "1990-05-10",
     "startdate": "2020-02-15",
-    "department": "Engineering",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
     "street": "123 Main St",
     "city": "New York",
-    "state": "NY",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
     "zipcode": "10001"
   },
   {
@@ -15,10 +21,16 @@
     "lastname": "Smith",
     "birthdate": "1985-09-20",
     "startdate": "2018-06-01",
-    "department": "Sales",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
     "street": "456 Elm St",
     "city": "Los Angeles",
-    "state": "CA",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
     "zipcode": "90001"
   },
   {
@@ -26,10 +38,883 @@
     "lastname": "Johnson",
     "birthdate": "1978-11-05",
     "startdate": "2010-01-15",
-    "department": "Finance",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
     "street": "789 Oak St",
     "city": "Chicago",
-    "state": "IL",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
+    "zipcode": "60601"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "birthdate": "1990-05-10",
+    "startdate": "2020-02-15",
+    "department": {
+      "value": "Engineering",
+      "label": "Engineering"
+    },
+    "street": "123 Main St",
+    "city": "New York",
+    "state": {
+      "value": "AZ",
+      "label": "Arizona"
+    },
+    "zipcode": "10001"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "birthdate": "1985-09-20",
+    "startdate": "2018-06-01",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    },
+    "street": "456 Elm St",
+    "city": "Los Angeles",
+    "state": {
+      "value": "CA",
+      "label": "California"
+    },
+    "zipcode": "90001"
+  },
+  {
+    "firstname": "Robert",
+    "lastname": "Johnson",
+    "birthdate": "1978-11-05",
+    "startdate": "2010-01-15",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    },
+    "street": "789 Oak St",
+    "city": "Chicago",
+    "state": {
+      "value": "IL",
+      "label": "Illinois"
+    },
     "zipcode": "60601"
   }
 ]

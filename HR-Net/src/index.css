@@ -1,3 +1,28 @@
+/* Police Urbanist Regular (400) */
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Regular'), local('Urbanist-Regular'),
+    url(./assets/fonts/Urbanist-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Medium'), local('Urbanist-Medium'),
+    url(./assets/fonts/Urbanist-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Light'), local('Urbanist-Light'),
+    url(./assets/fonts/Urbanist-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Bold'), local('Urbanist-Bold'),
+    url(./assets/fonts/Urbanist-Bold.ttf) format('truetype');
+}
+
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

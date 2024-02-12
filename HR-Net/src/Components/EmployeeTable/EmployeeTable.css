@@ -1,0 +1,75 @@
+/* Conteneur de la table */
+.Table__container {
+  /* max-width: 1100px; */
+  margin: 2rem auto 4rem; 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  border-radius: 8px; 
+}
+
+/* Conteneur des champs de saisie */
+.input__container {
+  margin: 2rem 0; 
+  text-align: right; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+/* Libellé des champs de saisie */
+.input__container label {
+  font-weight: 700; 
+  margin-bottom: 0.5rem; 
+}
+
+/* Champ de saisie */
+.input__container input {
+  width: -webkit-fill-available; 
+  border: 1px solid #CCCCCC; 
+  margin-bottom: 1.5rem; 
+  padding: 0 1rem; 
+  height: 3rem; 
+  font-size: 1rem; 
+  border-radius: 4px; 
+  background-color: #fff !important; 
+}
+
+/* Ligne de la table */
+.rdt_TableRow {
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Effet hover sur la ligne de la table */
+.rdt_TableRow:hover {
+  background-color: rgba(167, 224, 177, 0.2); 
+}
+
+/* Colonne de la table */
+.rdt_TableCol,
+.rdt_TableCol_Sortable {
+  justify-content: center; 
+}
+
+/* Cellule de la table */
+.rdt_TableCell {
+  padding: 1.5rem 0.5rem; 
+  font-size: 1rem; 
+  justify-content: center; 
+}
+
+/* En-tête de la table */
+.rdt_TableHeadRow {
+  font-size: 1rem; 
+  font-weight: 700; 
+  justify-content: center !important; 
+}
+
+/* Effet hover sur la colonne de la table */
+.rdt_TableCol:hover span {
+  opacity: 1; 
+  color: #96e6a1; 
+}
+
+/* Texte dans la colonne de la table */
+.rdt_TableCol span {
+  color: #96e6a1; 
+}

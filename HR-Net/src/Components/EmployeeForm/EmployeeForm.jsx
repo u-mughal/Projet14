@@ -9,17 +9,31 @@ import { useDispatch } from "react-redux";
 import { useForm, Controller } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup'
-import './Form.css'
+import './EmployeeForm.css'
 
+/**
+ * Crée un ensemble unique d'options d'état à partir des données fournies.
+ * @type {Array} Un ensemble unique d'options d'état.
+ */
 const STATES = [...new Set(states.map((state) => { return { value: state.abbreviation, label: state.name } }))];
 
+/**
+ * Crée un ensemble unique d'options de département à partir des données fournies.
+ * @type {Array} Un ensemble unique d'options de département.
+ */
 const DEPARTEMENTS = [...new Set(departements.map((departement) => { return { value: departement.name, label: departement.name } }))];
 
 
-const Form = () => {
 
+/**
+ * Composant du formulaire d'employé.
+ * @returns {JSX.Element} Composant React représentant le formulaire d'employé.
+ */
+const Form = () => {
+    // Utilisation de useDispatch pour accéder à la fonction dispatch Redux
     const dispatch = useDispatch();
 
+    // Définition du schéma de validation avec Yup
     const schema = yup.object().shape({
         firstname: yup.string().required("Please enter the employee firstname").min(2).max(30),
         lastname: yup.string().required("Please enter the employee lastname").min(2).max(30),
@@ -30,28 +44,32 @@ const Form = () => {
         zipcode: yup.number().positive().integer().required("Please enter the employee ZIP code"),
     });
 
+    // Déclaration des états locaux
     const [modalIsActive, setModalIsActive] = useState(false);
     const [selectedState, setSelectedState] = useState(null);
     const [selectedDepartment, setSelectedDepartment] = useState(null);
 
+    // Gestion du changement d'état sélectionné
     const handleStateChange = (selectedOption) => {
         setSelectedState(selectedOption);
     };
     
-    
+    // Gestion du changement de département sélectionné
     const handleDepartmentChange = (selectedOption) => {
         setSelectedDepartment(selectedOption);
     };
 
+    // Fonction pour fermer le modal
     const closeModal = () => {
         setModalIsActive(false);
     };
 
+    // Utilisation de useForm pour gérer le formulaire et la validation
     const { register, handleSubmit, control, reset, formState: {errors} } = useForm({
         resolver: yupResolver(schema)
     });
 
-
+    // Fonction pour soumettre le formulaire
     const onSubmit = (data) => {
         data.state = selectedState;
         data.department = selectedDepartment;
@@ -63,7 +81,7 @@ const Form = () => {
         dispatch({ type: 'employees/addEmployee', payload: data });
     }
     
-
+    // Retourne le JSX représentant le formulaire
     return (
         <>
         

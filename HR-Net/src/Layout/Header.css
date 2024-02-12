@@ -1,44 +1,52 @@
+/* Style de l'en-tête */
 header {
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  padding: 0.5rem 2rem;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); 
+  padding: 0.5rem 2rem; 
 }
 
+/* Style du menu de l'en-tête */
 .header__menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: center; 
 }
 
+/* Style du lien vers le logo dans le menu */
 .header__menu .link__logo {
-  font-size: 2rem;
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: 700;
+  font-size: 2rem; 
+  color: #2c3e50; 
+  text-decoration: none; 
+  font-weight: 700; 
 }
 
+/* Style de la liste dans le menu */
 .header__menu ul {
-  display: flex;
-  padding: 0;
+  display: flex; 
+  padding: 0; 
 }
 
+/* Style des éléments de liste dans le menu */
 .header__menu ul li {
-  list-style-type: none;
-  margin: 0 1rem;
+  list-style-type: none; 
+  margin: 0 1rem; 
 }
 
+/* Style des liens dans les éléments de liste du menu */
 .header__menu ul li a {
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: 700;
+  color: #2c3e50; 
+  text-decoration: none; 
+  font-weight: 700; 
 }
 
+/* Style des liens au survol dans les éléments de liste du menu */
 .header__menu ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
+/* Media query pour les écrans de taille supérieure à 600px */
 @media (min-width: 600px) {
   .header__menu {
-      justify-content: space-between;
+      justify-content: space-between; 
   }
 }

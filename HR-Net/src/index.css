@@ -5,55 +5,64 @@
     url(./assets/fonts/Urbanist-Regular.ttf) format('truetype');
 }
 
+/* Police Urbanist Medium */
 @font-face {
   font-family: 'Urbanist';
   src: local('Urbanist Medium'), local('Urbanist-Medium'),
     url(./assets/fonts/Urbanist-Medium.ttf) format('truetype');
 }
 
+/* Police Urbanist Light */
 @font-face {
   font-family: 'Urbanist';
   src: local('Urbanist Light'), local('Urbanist-Light'),
     url(./assets/fonts/Urbanist-Light.ttf) format('truetype');
 }
 
+/* Police Urbanist Bold */
 @font-face {
   font-family: 'Urbanist';
   src: local('Urbanist Bold'), local('Urbanist-Bold'),
     url(./assets/fonts/Urbanist-Bold.ttf) format('truetype');
 }
 
+/* Style général pour le HTML */
 html {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: Avenir, Helvetica, Arial, sans-serif; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  text-align: center; 
+  color: #2c3e50; 
 }
 
+/* Style général pour le body */
 body {
-  margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  margin: 0; 
+  font-family: 'Urbanist', sans-serif; 
 }
 
+/* Style pour les titres de niveau 1 */
 h1 {
-  margin: 0;
-  padding: 1rem 0;
+  margin: 0; 
+  padding: 1rem 0; 
 }
 
+/* Style pour les titres de niveau 2 */
 h2 {
-  margin: 0;
-  padding: 2rem 0;
+  margin: 0; 
+  padding: 2rem 0; 
 }
 
+/* Style pour le contenu principal */
 main {
-  min-height: calc(100vh - 134px);
+  min-height: calc(100vh - 134px); 
 }
 
+/* Style pour le conteneur de la table */
 .table__container {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 8px;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  border-radius: 8px; 
+  max-width: 1000px; 
+  margin: 2rem auto; 
+  padding: 2rem; 
 }

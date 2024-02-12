@@ -1,0 +1,122 @@
+/* Style du formulaire */
+form {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  border-radius: 8px; 
+  max-width: 600px; 
+  margin: 2rem auto; 
+  padding: 2rem; 
+}
+
+/* Style des champs du formulaire */
+.form__field {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  width: 100%; 
+  margin-bottom: 1.5rem; 
+}
+
+/* Style des libellés des champs */
+.form__field label {
+  font-weight: 700; 
+  margin-bottom: 0.5rem; 
+}
+
+/* Style des champs de saisie */
+.form__field input {
+  width: -webkit-fill-available; 
+  border: 1px solid #CCCCCC; 
+  padding: 0 1rem; 
+  height: 3rem; 
+  font-size: 1rem; 
+  border-radius: 4px; 
+  background-color: #fff !important; 
+}
+
+/* Style des champs de sélection */
+.form__field .select {
+  margin-bottom: 1.5rem;
+  width: 100%; 
+  text-align: left; 
+}
+
+/* Style des messages d'erreur */
+.form__field .error {
+  display: flex; 
+  align-items: center; 
+  font-size: 0.75rem; 
+  color: #e54858; 
+  display: block; 
+  margin-top: 0.5rem; 
+  margin-bottom: 0; 
+  text-align: left; 
+  opacity: 1; 
+  transition: 0.3s; 
+}
+
+/* Style de l'icône de calendrier */
+.react-datepicker__calendar-icon {
+  top: 60% !important; 
+}
+
+/* Style pour les éléments spécifiques */
+.css-w9q2zk-Input2 {
+  grid-template-columns: auto !important; 
+}
+
+/* Style du conteneur du datepicker */
+.datepicker__container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+/* Style du conteneur du datepicker */
+.react-datepicker-wrapper {
+  width: 100%; 
+}
+
+/* Style de l'icône de calendrier */
+.react-datepicker__calendar-icon {
+  right: 1rem; 
+  transform: translate(0%, -100%); 
+  top: 45%; 
+  padding: 0 !important; 
+}
+
+/* Style du champ de saisie de date */
+fieldset {
+  margin-bottom: 2rem; 
+  padding: 2rem; 
+  border-width: 2px; 
+  border-style: solid; 
+  border-image: linear-gradient(to right, #d4fc79, #96e6a1) 1; 
+}
+
+/* Style du bouton */
+.button {
+  display: inline-block; 
+  font-size: 16px; 
+  font-weight: 700; 
+  text-align: center; 
+  border-radius: 8px; 
+  border: none; 
+  background-color: #d4fc79; 
+  color: #2c3e50; 
+  padding: 12px 18px; 
+  cursor: pointer; 
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Style du bouton au survol */
+.button:hover {
+  background-color: #96e6a1; 
+  color: #2c3e50; 
+}
+
+/* Media query pour les écrans larges */
+@media (min-width: 600px) {
+  .datepicker__container .form__field {
+    width: 48%; /* Largeur des champs de saisie de date */
+  }
+}
